@@ -1,0 +1,83 @@
+html, body {
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#myTabContent {
+  width: 100%;
+  height: 95%;
+  min-height: 100px;
+  background-color: rgba(42,42,42,1.0);
+}
+
+#get_cash_offer {
+  width: 100%;
+  height: 100%;
+  /* max-height: 100%; */
+  min-height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background: url(../img/dallas.jpg) no-repeat center;
+  background-size: contain;
+  /* background-size: cover; */
+}
+#cash_offer {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#testimonials{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+#steps{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+#questions{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+#contact{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+.center_div{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-link {
+  background-color: rgba(42,42,42,1.0);
+  color: rgba(64,210,226,1);
+}
+.iconlink{
+  background-color: rgba(42,42,42,1.0);
+  color: rgba(64,210,226,1);
+}
+#home {
+}
+.filter1{
+  background-color: rgba(42,42,42,0.5);
+  height: 100%;
+}
+.page_title{
+  color: white;
+}
+.small_text{
+  color: white;
+}
+#white_home{
+  color: white;
+}
+#color_home{
+  color: rgba(64,210,226,1);
+}
+#color_test{
+  color: rgba(64,210,226,1);
+}
