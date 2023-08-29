@@ -1,9 +1,20 @@
 
-$blue: #50b2ff;
-$secondary: $gray-900;
-$border-radius: 1.5rem;
-$border-radius-lg: 2rem;
-$border-radius-sm: 1rem;
+$orange: #ffad3d;
+$secondary: $orange;
+$blue: #47a3f8;
+$black: #1c1b1f;
+$gray-400: #cccfd5;
+$info: $gray-400;
+$border-radius: 1.4rem;
+$border-radius-lg: 1.7rem;
+$border-radius-sm: 1.2rem;
+$link-color: theme-color("secondary");
 $border-width: 2px;
-$input-border-color: $gray-200;
-$toast-border-width: 2px;
+$dt-font-weight: $font-weight-bolder;
+$display3-weight: 700;
+$display2-weight: 700;
+$display1-weight: 700;
+$display4-weight: 700;
+$btn-font-weight: $font-weight-bold;
+$link-decoration: underline;
+$enable-responsive-font-sizes: true;
