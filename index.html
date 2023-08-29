@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title></title>
-<meta  name="description" content="" />
+<title>James' Portfolio | Designing The Future Together</title>
+<meta  name="description" content="James sole - I approches the problem hollistically with all 8+ years my of diverse IT and marketing experience to produce an effective solution." />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- font awsome -->
 <script src="https://kit.fontawesome.com/4099dfcaac.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="src/bootstrap.css" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="src/bootstrap.min.css" />
 <link rel="stylesheet" href="src/custom.css" />
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,17 +21,435 @@
 <![endif]-->
 </head>
 <body>
-      <div class="frosted card p-5 text-center">
-        <img src="img/js-logo.png" alt="James Sole Logo" class="mt-5  logo">
-        <h1 class="mt-5 mb-3">Developer at Work</h1>
-        <p class="mb-4"> Web portfolio coming soon.<br>
-      Get downloadable portfolio now.</p>
-      <a href="src/James-Sole-Portflio.pdf"class="btn btn-secondary mx-5 mt-3 px-2"   target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer">VIEW ONLINE</a>
-        <a href="src/James-Sole-Portflio.pdf"class=" text-secondary mt-2 mx-5 mb-5 px-2"  data-toggle="tooltip" data-placement="bottom" title="This link will download a PDF." download>DOWNLOAD</a>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-2">
+      <div class="container">
+        <a class="navbar-brand mt-1 mr-auto" href="#">
+          <img src="img/logo-light.png" alt="Official James Sole Logo" class="img-fluid logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse flex-grow-0 mt-2" id="navbarNavDropdown">
+          <ul class="navbar-nav text-center font-weight-bold ">
+            <li class="nav-item home active">
+              <a class="nav-link active" href="#"><i class="fas fa-home fa-lg"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about-me">ABOUT ME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="src/Resume-JamesSole.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer">RESUME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#project">PROJECT</a>
+            </li>
+            <div class="nav-item">
+              <a class="btn btn-secondary border border-white ml-auto mr-auto ml-lg-3" href="contact/index.html">GET CONNECTED</a>
+            </div>
+          </ul>
+        </div>
       </div>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous">
-<script  src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    </nav>
+  </header>
+  <section class="bg-gradient">
+    <div class="container">
+      <div class="row align-items-center text-lg-left text-center py-5">
+        <div class="col-xl-7 col-lg-8 text-white">
+            <h1 class="display-3 mt-auto mb-5"><span class="text-info h1 font-weight-light">Hi! I'm James. Together, we can</span><br>design &amp; develop<br><span class="text-primary">innovative</span><br>brands &amp; products.</h1>
+            <p class="mb-4"><a class="btn btn-secondary border border-white mr-3" href="contact/index.html">GET CONNECTED</a> <a href="index.html#about-me" class="text-white font-weight-bold d-md-inline d-block mt-md-0 mt-3">LEARN MORE ABOUT ME</a></p>
+        </div>
+        <div class="col-xl-5 col-lg-4">
+          <img src="img/james-full.png" alt="Full body photo of James Sole the product designer." class="img-fluid my-3 py-5 d-none d-lg-block">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="project">
+    <div class="container">
+      <div class="row">
+        <div class="col-12  text-center">
+          <h2 class="mt-5 mb-md-5 mb-3 pt-4 display-4">See My Skills In&nbsp;Action</h2>
+          <div class="card mt-3">
+            <div class="row align-items-center">
+              <div class="col-xl-5 col-lg-7   px-5 pt-5 text-md-left text-center mx-md-4 mx-lg-0 pr-lg-0 pb-0 pb-lg-5">
+                <h3 class="font-weight-bold pb-2 text-primary">FitAble Fitness App&nbsp;Concept</h3>
+                <p class="mb-0">UI / UX Project</p>
+                <p class="text-muted font-weight-light">April 2023 - May 2023</p>
+                <p><strong>Objective:</strong> Design a mobile app that provides accessible fitness resources, tools, and guidance for users with various disabilities, including visual, hearing, and physical&nbsp;impairments.</p>
+                <a href="https://dribbble.com/Sole1" class="font-weight-bold" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer">VIEW PROJECT</a>
+              </div>
+              <div class="col-xl-7 col-lg-5 my-4 py-2 px-5 pb-sm-4 text-center">
+                <img src="img/fitable-cover.jpg" alt="Fitable Fitness app phone mockup with man excersizing in wheelchair." class="img-project img-fluid rounded-sm">
+              </div>
+            </div>
+          </div>
+            <a href="src/James-Sole-Portflio.pdf" class="btn btn-info my-xl-5 my-lg-4 my-5 px-2" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fas fa-plus-circle"></i> VIEW MORE</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about-me">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-12  text-center mt-md-5">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-7">
+              <h2 class="my-4 display-4">Look No Further for Your Next&nbsp;Designer</h2>
+            </div>
+          </div>
+          <div class="row align-items-center">
+            <div class="col-lg-5">
+              <img src="img/james-head.png" alt="portrait photo of James Sole the product designer." class="img-fluid">
+            </div>
+            <div class="col-lg-7 px-5 text-lg-left text-center">
+              <p class="mt-lg-5 mt-2 pt-2">I'm James Sole, a UI/UX designer with 4+ years of design experience. I specialize in crafting user-centric and visually appealing interfaces that drive results. Collaborating effectively with cross-functional teams, I bring empathy and innovation to every project. Let's work together to create impactful user experiences that leave a lasting impression.</p>
+              <a href="src/Resume-JamesSole.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer" class="btn btn-outline-primary">SHARE RESUME</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="container py-md-5 py-4">
+      <div class="row">
+        <div class="col-12 mt-md-5">
+          <div class="card my-5 text-center">
+            <h3 class="mt-5 h1 font-weight-bold pt-4 px-4">The Tools In My Tool&nbsp;Belt</h3>
+            <div class="row d-flex justify-content-center py-4">
+              <div class="col-md-7 px-5">
+                <p>Although I have many skills I strive every day to master more because <strong>learning never&nbsp;stops</strong>.</p>
+              </div>
+            </div>
+            <div class="single-item">
+              <div>
+                <p><a class="btn btn-info m-3"><i class="fas fa-check-circle"></i>&nbsp;Industry Skills</a></p>
+                <div class="row p-4">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Product Strategy</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Interaction Design</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>User-centered Design</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>User Interface Design</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Information Architecture</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Photoshop</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Wire-framing</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>User Experience</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Adobe XD</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>HTML</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>CSS</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Illustrator</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>UX Research</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Figma</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <p><a class="btn btn-info m-3"><i class="fas fa-handshake"></i>&nbsp;Soft Skills</a></p>
+                <div class="row p-4">
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Listening</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Conflict Resolution</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Collaboration</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Time Managemet</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Communication</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Critical Thinking</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Team Management</p>
+                  </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6">
+                    <p>Multitasking</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="font-weight-bold mt-4 px-4">Is there a skill that piqued your intrest or you don't see&nbsp;here?</p>
+            <p><a class="btn btn-secondary border border-white ml-auto mr-auto mb-5" href="contact/index.html">LET'S TALK</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="steps">
+    <div class="container py-md-5 py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-4 col-md-5 text-md-left text-center">
+          <h3 class="h1 font-weight-bold">All Part of The&nbsp;Process</h3>
+          <p class="py-3">With experience in multiple design disciplines, I've developed a process that creates seamless, engaging user experiences. Striving for a perfect balance between aesthetics and functionality, I deliver delightful and intuitive designs. Collaboration with stakeholders and iterative user testing refine my work, while meticulous attention to typography, color schemes, and visual elements ensures a visually appealing&nbsp;interface.</p>
+        </div>
+        <div class="col-lg-8 col-md-7">
+          <div class="card my-2 rounded-sm">
+            <div class="row align-items-center">
+              <div class="col-lg-1 col-2 text-right p-0">
+                <h3 class="h3 font-weight-bold text-primary mb-0">1.</h3>
+              </div>
+              <div class="col-lg-11 col-10">
+                <p class="p-3 mb-0">It all begins with thorough <span class="text-secondary">research</span>, where I delve into user needs, behaviors, and market trends to gain valuable&nbsp;insights.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 rounded-sm">
+            <div class="row align-items-center">
+              <div class="col-lg-1 col-2 text-right p-0">
+                <h3 class="font-weight-bold text-primary mb-0">2.</h3>
+              </div>
+              <div class="col-lg-11 col-10">
+                <p class="p-3 mb-0">Armed with this knowledge, I then <span class="text-secondary">craft user personas and flows</span> to better understand the target&nbsp;audience.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 rounded-sm">
+            <div class="row align-items-center">
+              <div class="col-lg-1 col-2 text-right p-0">
+                <h3 class="font-weight-bold text-primary mb-0">3.</h3>
+              </div>
+              <div class="col-lg-11 col-10">
+                <p class="p-3 mb-0">Next, I <span class="text-secondary">sketch out wire-frames and prototypes</span> to visualize the interface's structure and interactions to better collaborate with&nbsp;stakeholders.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 rounded-sm">
+            <div class="row align-items-center">
+              <div class="col-lg-1 col-2 text-right p-0">
+                <h3 class="font-weight-bold text-primary mb-0">4.</h3>
+              </div>
+              <div class="col-lg-11 col-10">
+                <p class="p-3 mb-0">To continue, I program or work closely with other developers to <span class="text-secondary">implement the designs</span> while maintaining a focus on usability and&nbsp;accessibility.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card my-2 rounded-sm">
+            <div class="row align-items-center">
+              <div class="col-lg-1 col-2 text-right p-0">
+                <h3 class="font-weight-bold text-primary mb-0">5.</h3>
+              </div>
+              <div class="col-lg-11 col-10">
+                <p class="p-3 mb-0">Finally, I <span class="text-secondary">test</span> the aplication with individuals who match our formulated personas <span class="text-secondary">and&nbsp;iterate</span> with their&nbsp;feedback.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="quotes">
+    <div class="container py-md-5 py-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card text-center pb-2">
+            <h3 class="h1 font-weight-bold mt-5">Dont Just Take My Word For&nbsp;It</h3>
+            <p class="py-3">Here is what some people have to say about me and my work.</p>
+            <div class="row align-items-center d-flex justify-content-center py-4">
+              <div class="col-11">
+                <div class="responsive text-left">
+                  <div class="my-auto">
+                    <div class="row align-items-center px-3">
+                      <div class="col-lg-3">
+                        <img src="img/tiara.jpeg" alt="Linkedin Porait of Tiara UI/UX Designer." class="img-fluid rounded-circle p-lg-0 px-md-5 p-3">
+                      </div>
+                      <div class="col-lg-9 text-lg-left text-center">
+                        <p class="font-weight-bold mb-2">“Your dedication to creating high-quality app designs that are based on real lived experiences really sets you apart as a Designer.” <span class="font-weight-light d-inline-block">- Tiara (UX Designer)</span></p>
+                        <p class="mb-0"><span class="text-muted">Class Mate</span><a href="https://www.linkedin.com/company/braveachievers/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><img src="img/go-create.jpg" alt="GoCreate icon" class="img-icon mx-2"></a><span><a href="https://www.linkedin.com/in/nmilfort"target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x linkedin-blue"></i></a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="row align-items-center px-3">
+                      <div class="col-lg-3 text-center">
+                        <img src="img/nosha.jpg" alt="Linkedin Porait of Tiara UI/UX Designer." class="img-fluid rounded-circle p-lg-0 px-md-5 p-3">
+                      </div>
+                      <div class="col-lg-9 text-lg-left text-center">
+                        <p class="font-weight-bold mb-2">“Extremely hardworking and always willing to go the extra mile. He also has amazing work ethic!” <span class="font-weight-light d-inline-block">- Nosha (UX Designer)</span></p>
+                        <p class="mb-0"><span class="text-muted">Class Mate</span><a href="https://www.linkedin.com/company/braveachievers/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><img src="img/go-create.jpg" alt="GoCreate icon" class="img-icon mx-2"></a><span><i class="fab fa-linkedin fa-2x text-white"></i></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-auto">
+                    <div class="row align-items-center px-3">
+                      <div class="col-lg-3 text-center">
+                        <img src="img/Jennifer.jpeg" alt="Linkedin Porait of Tiara UI/UX Designer." class="img-fluid rounded-circle p-lg-0 px-md-5 p-3">
+                      </div>
+                      <div class="col-lg-9 text-lg-left text-center">
+                        <p class="font-weight-bold mb-2">“James is a Web designer who is on point, organized, and creates beautiful work. He's easy and fun to collaborate with but also extremely professional.” <span class="font-weight-light d-inline-block">- Jennifer (Copy Writer)</span></p>
+                        <p class="mb-0"><span class="text-muted">Coworker</span><a href="https://www.linkedin.com/company/careington-international-corporation/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><img src="img/careington.jpg" alt="Careington icon" class="img-icon mx-2"></a><span><a href="http://linkedin.com/in/jenallencopy" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x linkedin-blue"></i></a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-3">
+                    <div class="row align-items-center px-3">
+                      <div class="col-lg-3">
+                        <img src="img/ruth.jpeg" alt="Linkedin Porait of Tiara UI/UX Designer." class="img-fluid rounded-circle p-lg-0 px-md-5 p-3">
+                      </div>
+                      <div class="col-lg-9 text-lg-left text-center">
+                        <p class="font-weight-bold mb-2">“James is a visionary businessman full of innovative ideas and steps to bring his visions to life.” <span class="font-weight-light d-inline-block">- Ruth (Photographer)</span></p>
+                        <p class="mb-0"><span class="text-muted">Client</span><a href="https://www.linkedin.com/company/soulform-designs/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><img src="img/soulform.jpg" alt="GoCreate icon" class="img-icon mx-2"></a><span><a href="https://www.linkedin.com/in/ruth-ezeagwula-m-a-18229010a" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x linkedin-blue"></i></a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="my-2">
+                    <div class="row align-items-center px-3">
+                      <div class="col-lg-3 text-center">
+                        <img src="img/matt.jpg" alt="Linkedin Porait of Tiara UI/UX Designer." class="img-fluid rounded-circle p-lg-0 px-md-5 p-3">
+                      </div>
+                      <div class="col-lg-9 text-lg-left text-center">
+                        <p class="font-weight-bold mb-2">“James is a diligent and detail-oriented collaborator who consistently strives to better himself and the teams he works with.” <span class="font-weight-light d-inline-block">- Matthew (Copy Writer)</span></p>
+                        <p class="mb-0"><span class="text-muted">Coworker</span><a href="https://www.linkedin.com/company/careington-international-corporation/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><img src="img/careington.jpg" alt="Careington icon" class="img-icon mx-2"></a><span><a href="http://www.linkedin.com/in/matthew-rand123" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x linkedin-blue"></i></a></span></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="resume-download">
+    <div class="container py-md-5 py-4 text-center">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-9 text-lg-left">
+          <h3 class="font-weight-bold h2 m-3 mb-0">Together, we'll revolutionize the world of user experiences, one pixel at a time!</h3>
+        </div>
+        <div class="col-lg-3 text-lg-right">
+          <a href="src/Resume-JamesSole.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer" class="btn btn-outline-primary">DOWNLOAD RESUME</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-black pt-2">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-lg-8 text-lg-left text-center">
+          <img src="img/logo-light.png" alt="Official James Sole Logo" class="img-fluid logo-footer mr-4">
+          <span class="d-md-inline d-block mt-md-0 mt-3">
+            <a class="text-info mr-3" href="#">HOME</a>
+            <a class="text-info mr-3" href="index.html#about-me">ABOUT ME</a>
+            <a class="text-info mr-3" href="src/Resume-JamesSole.pdf" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer">RESUME</a>
+            <a class="text-info"  href="index.html#project">PROJECT</a>
+          <span>
+        </div>
+        <div class="col-lg-4 text-lg-right text-center py-lg-0 py-3">
+          <a class="btn btn-secondary border border-white ml-auto mr-auto" href="contact/index.html">GET CONNECTED</a>
+        </div>
+      </div>
+      <hr class="border-info my-4">
+      <div class="row align-items-center">
+        <div class="col-lg-8 text-white text-lg-left text-center">
+          <p>SoulForm Designs &copy; <script type="text/javascript">var dteNow = new Date;var intYear = dteNow.getFullYear();document.write(intYear);</script> Copyright</p>
+        </div>
+        <div class="col-lg-4 text-lg-right text-center">
+          <a class="text-white mx-2" href="https://www.behance.net/james-sole" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-behance-square fa-2x"></i></a>
+          <a class="text-white mx-2" href="https://dribbble.com/Sole1" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-dribbble-square fa-2x"></i></a>
+          <a class="text-white mx-2" href="https://www.linkedin.com/in/james-sole" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-linkedin fa-2x"></i></a>
+          <a class="text-white mx-2" href="https://github.com/James-Sole" target="_blank" data-toggle="tooltip" data-placement="bottom" title="This link will open in a new window." rel="noopener noreferrer"><i class="fab fa-github-square fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-9ZfPnbegQSumzaE7mks2IYgHoayLtuto3AS6ieArECeaR8nCfliJVuLh/GaQ1gyM" crossorigin="anonymous">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript">
+    window.onscroll = function() {
+      var doc = document.documentElement;
+      var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+      if(top <= 30) {
+         jQuery(".navbar-dark").removeClass('extra');
+         $('.logo').attr('src','img/logo-light.png');
+      }
+      else {
+         jQuery(".navbar-dark").addClass('extra');
+         $('.logo').attr('src','img/logo-dark.png');
+      }
+    }
+    $(document).ready(function(){
+      $('.single-item').slick({
+        arrows: false,
+        dots: true,
+      });
+      $('.responsive').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    });
+  </script>
+
 </body>
 </html>
